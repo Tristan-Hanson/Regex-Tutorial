@@ -15,7 +15,7 @@ When given a string regex can be used to filter through said string and return, 
 
 "The quick brown fox jumped over the lazy dog."
 
-First, to begin using regex we use the / to open the expression and another / at the end to close the expression indicating everything in the middle is going to be executed by regex.
+First, when using regex we use the / to open the expression and another / at the end to close the expression indicating everything in the middle is going to be executed by regex.
 Now as a developer, we can use the regex expression **/b/** to check the string to see if it contains the letter "b".
 Similarly we can use the expression /brown/ to check if the string contains the word brown.
 
