@@ -21,16 +21,16 @@ Similarly we can use the expression /brown/ to check if the string contains the 
 
 Now given a different string of:
 
-"brown, frown, crown, drown"
+**"brown, frown, crown, drown"**
 
-We could use the . symbol to match for all of the items in the string by writing **/.rown/**. The dot symbol in regex is used to return for anything that would be in its place.
-Some other commonly used symbols in regex are ^ & {} [] | and so on. However if given a string like:
+We could use the **.** symbol to match for all of the items in the string by writing **/.rown/**. The dot symbol in regex is used to return for anything that would be in its place.
+Some other commonly used symbols in regex are **^ & {} [] |** and so on. However if given a string like:
 
-"(My) Name^Is Tr|stan"
+**"(My) Name^Is Tr|stan"**
 
 and if we wanted to check the string to see if it contains these symbols we would run into some issues.
-In regex the () symbol is used to group one or more regular expressions, and the | symbol is used similar to in JavaScript as an or symbol. An example is if we were to check if a web application contained a .com or .org we could write that as **(com | org)**.
-The way to bypass this in regex is by using \ at the start of your expression. For the string above in order to check for the | symbol we would write that as **/\|/** thus indicating that in this expression we don't want the pipe symbol to be recognized as a regex expression, but rather that we are using the expression to search for the symbol.
+In regex the **()** symbol is used to group one or more regular expressions, and the **|** symbol is used similar to in JavaScript as an or symbol. An example is if we were to check if a web application contained a .com or .org we could write that as **(com | org)**.
+The way to bypass this in regex is by using \ at the start of your expression. For the string above in order to check for the **|** symbol we would write that as **/\|/** thus indicating that in this expression we don't want the pipe symbol to be recognized as a regex expression, but rather that we are using the expression to search for the symbol.
 
 ## Basic Examples
 Here are more basic examples of simple regex expressions:
@@ -43,17 +43,17 @@ Credit to [cs.lmu.edu](https://cs.lmu.edu/~ray/notes/regex/) for the graph.
 Now that I've given the basics of regex, I will demonstrate how we can use this with a real world example.
 If we wanted to validate if the string given below is a phone number:
 
-1234567890
+**1234567890**
 
 We could start by using the expression **/\d{10}/** The \d in this scenario is checking for digits and the {10} is to confirm that there are 10 in a row.
 Now what if the phone number is written:
 
-123-456-7890
+**123-456-7890**
 
 Here we can use **/\d{3}-?\d{3}-?\d{4}/** now searching for the included hyphen, and the addition of the question mark indicating that it is optional.
 To take it a step further, we can also check if the phone number is wrote with spaces instead of using a dash as follows:
 
-123 456 7890
+**123 456 7890**
 
 To build off of the previous example we can write the new regex expression as **/\d{3}[ -]?\d{3}[ -]?\d{4}/** with the addition of [ -]? rather than the previous -?. Now indicating that we are checking for everything within the brackets; in this case it is the addition of the space.
 
