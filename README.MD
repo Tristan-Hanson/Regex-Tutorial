@@ -4,11 +4,11 @@ To begin, regex is a collection of characters that when used help find, replace 
 
 ## Links
 *[Introduction](#introduction)
-*[Basics](##regex-basics)
-*[Basic Examples](##basic-examples)
-*[Tutorial](##real-world-example-/-tutorial)
-*[Conclusion](##conclusion)
-*[Author](##wrote-by)
+*[Basics](#regex-basics)
+*[Basic Examples](#basic-examples)
+*[Tutorial](#real-world-example-/-tutorial)
+*[Conclusion](#conclusion)
+*[Author](#wrote-by)
 
 ## Regex Basics
 When given a string regex can be used to filter through said string and return, or validate for specific information that the user is looking for. For an example we'll use the string:
