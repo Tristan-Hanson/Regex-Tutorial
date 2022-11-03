@@ -6,7 +6,7 @@ To begin, regex is a collection of characters that when used help find, replace 
 *[Introduction](#introduction)
 *[Basics](#regex-basics)
 *[Basic Examples](#basic-examples)
-*[Tutorial](#real-world-example-/-tutorial)
+*[Tutorial](#tutorial)
 *[Conclusion](#conclusion)
 *[Author](#wrote-by)
 
@@ -39,7 +39,7 @@ Here are more basic examples of simple regex expressions:
 
 Credit to [cs.lmu.edu](https://cs.lmu.edu/~ray/notes/regex/) for the graph.
 
-## Real World Example / Tutorial
+## Tutorial
 Now that I've given the basics of regex, I will demonstrate how we can use this with a real world example.
 If we wanted to validate if the string given below is a phone number:
 
