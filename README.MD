@@ -5,6 +5,7 @@ To begin, regex is a collection of characters that when used help find, replace 
 ## Links
 *[Introduction](#introduction)
 *[Basics](#regex-basics)
+*[Components](#components)
 *[Basic Examples](#basic-examples)
 *[Tutorial](#tutorial)
 *[Conclusion](#conclusion)
@@ -31,6 +32,20 @@ Some other commonly used symbols in regex are **^ & {} [] |** and so on. However
 and if we wanted to check the string to see if it contains these symbols we would run into some issues.
 In regex the **()** symbol is used to group one or more regular expressions, and the **|** symbol is used similar to in JavaScript as an or symbol. An example is if we were to check if a web application contained a .com or .org we could write that as **(com | org)**.
 The way to bypass this in regex is by using \ at the start of your expression. For the string above in order to check for the **|** symbol we would write that as **/\|/** thus indicating that in this expression we don't want the pipe symbol to be recognized as a regex expression, but rather that we are using the expression to search for the symbol.
+
+## Components
+
+### Anchors
+Anchors in regex are tokens that aren't used in matching any characters, but rather they are used to assert something about the string or the matching process. For example matching at the beginning of the string or end of a line.
+
+### Quantifiers
+Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found, For example [a]+ will match a one or more times. + being the quantifier here.
+
+### Character Classes
+With a character class you can tell the regex engine to match only one out of several characters. Simply place the characters you want to match between square brackets. If you want to match an a or an e, use [ae]. You could use this in gr[ae]y to match either gray or grey. Very useful if you do not know whether the document you are searching through is written in American or British English
+
+### Groupings
+In regex, we can create groupings using the parentheses and search for any instance that grouping is used. For instance, (cat) would return any instance where the letters "c", "a", and "t" are together.
 
 ## Basic Examples
 Here are more basic examples of simple regex expressions:
